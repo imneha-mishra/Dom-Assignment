@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Counter</h2>
+    <button onclick="incriment()" id="plus">+</button><h3 id="count"></h3><button onclick="decriment()" id="sub">-</button>
+</body>
+<script>
+let data=0
+
+document.getElementById("count").innerText=data;
+
+function incriment(){
+    data=data+1;
+    document.getElementById("count").innerText=data;
+}
+
+function decriment(){
+    data=data-1;
+    if(data < 0){
+        alert ("Counter is going beyound Zero")
+    }
+    document.getElementById("count").innerText=data
+}
+</script>
+</html>
